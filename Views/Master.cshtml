@@ -1,0 +1,31 @@
+﻿@using System
+@using System.Collections.Generic
+@using Umbraco.Cms.Core.PublishedCache
+@using Umbraco.Cms.Core.Services
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+@{
+Layout = null;
+var currentCulture = Model.GetCultureFromDomains();
+var masterLinks = System.IO.File.Exists("wwwroot/dist/masterLinks.html") ? Html.Raw(System.IO.File.ReadAllText("wwwroot/dist/masterLinks.html")) : null;
+}
+
+<!DOCTYPE html>
+<html lang="@currentCulture">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="description" content="description">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @masterLinks
+</head>
+
+<body data-doctype="@Model.ContentType.Alias">
+<main id="mainContent">
+    @RenderBody()
+</main>
+</body>
+
+</html>

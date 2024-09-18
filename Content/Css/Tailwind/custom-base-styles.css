@@ -1,0 +1,102 @@
+@layer base {
+    body {
+        @apply text-base;
+        @apply flex flex-col min-h-screen;
+        @apply overflow-x-hidden;
+        @apply font-body;
+    }
+    
+    svg {
+        @apply shrink-0 transition;
+    }
+
+    main {
+        @apply grow;
+
+        & > div {
+            @apply overflow-x-hidden;
+        }
+    }
+
+    h1, .h1 {
+        @apply text-h1;
+    }
+
+    h2, .h2 {
+        @apply text-h2;
+    }
+
+    h3, .h3 {
+        @apply text-h3;
+    }
+
+    h1, h2, h3 {
+        @apply font-black text-pretty;
+    }
+
+    form {
+        @apply flex flex-col gap-y-3 lg:gap-y-6;
+    }
+
+    [type='text'],
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    select {
+        @apply rounded-theme-form border-0 text-secondary bg-theme-form h-14 p-4 text-base min-h-0 leading-none placeholder:text-theme-form-placeholder w-full;
+    }
+
+    textarea {
+        @apply rounded-theme-form border-0 text-secondary bg-theme-form h-32 p-4 text-base min-h-0 leading-none placeholder:text-theme-form-placeholder w-full;
+    }
+
+    [type='checkbox'] {
+        @apply rounded-theme-form border-theme-border h-7 w-7 bg-theme-form text-accent mt-0.5;
+    }
+
+    [type='radio'] {
+        @apply border-theme-border h-7 w-7 bg-theme-form text-accent mt-0.5;
+    }
+
+    .hs-form-booleancheckbox-display {
+        @apply flex gap-x-2;
+    }
+
+    form p {
+        @apply font-normal;
+    }
+
+    form .hs-button {
+        @apply btn btn-black rounded-theme-form;
+    }
+
+    label {
+        @apply font-bold text-lg mb-1 block;
+    }
+
+    .hs-form-required {
+        @apply text-error;
+    }
+
+    .singlecheckbox .form-label {
+        @apply hidden;
+    }
+
+    input[type="checkbox"][disabled] {
+        @apply opacity-50 cursor-not-allowed;
+    }
+    
+
+    .error, .invalid {
+        @apply text-error border border-error;
+    }
+}

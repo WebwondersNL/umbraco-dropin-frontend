@@ -1,0 +1,80 @@
+{
+  "name": "startupkit-umbraco-webpack",
+  "version": "1.0.0",
+  "author": "Thomas van Deursen",
+  "license": "MIT",
+  "main": "Index.js",
+  "private": true,
+  "scripts": {
+    "webpack::build": "cross-env NODE_ENV=production webpack",
+    "webpack::debugging": "webpack --watch --mode development",
+    "upgrade": "yarn upgrade-interactive"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "cssnano": {
+    "preset": "default"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "selector-class-pattern": null
+    }
+  },
+  "devDependencies": {
+    "@alpinejs/collapse": "3.13.2",
+    "@alpinejs/intersect": "^3.13.5",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/alpinejs": "3.13.3",
+    "@types/alpinejs__collapse": "3.13.2",
+    "@types/alpinejs__intersect": "^3.13.3",
+    "@types/browser-sync-webpack-plugin": "^2.2.5",
+    "@types/node": "^22.5.5",
+    "@types/vimeo__player": "^2.18.3",
+    "@types/webpack": "^5.28.5",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "@vimeo/player": "^2.24.0",
+    "alpinejs": "3.14.1",
+    "babel-loader": "^9.2.1",
+    "blaze-slider": "^1.9.3",
+    "browser-sync": "^3.0.2",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "browserlist": "^1.0.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "eslint": "^9.10.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "html-bundler-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "lightningcss": "^1.27.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "mjml": "^4.15.3",
+    "postcss": "^8.4.47",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
+    "postcss-scss": "^4.0.9",
+    "shx": "^0.3.4",
+    "simple-parallax-js": "^6.0.1",
+    "source-map-loader": "^5.0.0",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-webpack-plugin": "^5.0.1",
+    "tailwindcss": "^3.4.12",
+    "terser-webpack-plugin": "^5.3.10",
+    "tiny-slider": "^2.9.4",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "packageManager": "yarn@3.6.4"
+}

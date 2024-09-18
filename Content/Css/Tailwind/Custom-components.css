@@ -1,0 +1,28 @@
+@layer components {
+    .btn {
+        @apply inline-flex items-center cursor-pointer shrink-0 flex-wrap h-12 justify-center px-7 pb-0.5 rounded-full;
+        @apply text-center text-base leading-[1.1rem] no-underline font-bold transition-colors;
+    }
+
+    .btn-primary {
+        @apply text-secondary bg-primary;
+        @apply hover:bg-primary-hover;
+    }
+
+    .btn-secondary {
+        @apply text-white bg-secondary;
+        @apply hover:bg-secondary-hover;
+    }
+    
+    .btn-black {
+        @apply text-white bg-black;
+        @apply hover:bg-white hover:text-black;
+    }
+    
+    /* RTE */
+    .prose {
+        @apply prose-strong:font-black;
+        @apply prose-a:font-normal;
+        @apply max-w-none;
+    }
+}
